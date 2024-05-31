@@ -38,7 +38,7 @@ MACRO tt_um_dvxf_dj8v_dac
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 78.205 0.000 78.655 0.500 ;
+        RECT 156.410 0.000 157.310 1.000 ;
     END
   END ua[0]
   PIN ua[1]
@@ -46,7 +46,7 @@ MACRO tt_um_dvxf_dj8v_dac
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 67.165 0.000 67.615 0.500 ;
+        RECT 134.330 0.000 135.230 1.000 ;
     END
   END ua[1]
   PIN ua[2]
@@ -54,7 +54,7 @@ MACRO tt_um_dvxf_dj8v_dac
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 56.125 0.000 56.575 0.500 ;
+        RECT 112.250 0.000 113.150 1.000 ;
     END
   END ua[2]
   PIN ua[3]
@@ -62,7 +62,7 @@ MACRO tt_um_dvxf_dj8v_dac
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 45.085 0.000 45.535 0.500 ;
+        RECT 90.170 0.000 91.070 1.000 ;
     END
   END ua[3]
   PIN ua[4]
@@ -70,7 +70,7 @@ MACRO tt_um_dvxf_dj8v_dac
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 34.045 0.000 34.495 0.500 ;
+        RECT 68.090 0.000 68.990 1.000 ;
     END
   END ua[4]
   PIN ua[5]
@@ -78,7 +78,7 @@ MACRO tt_um_dvxf_dj8v_dac
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 23.005 0.000 23.455 0.500 ;
+        RECT 46.010 0.000 46.910 1.000 ;
     END
   END ua[5]
   PIN ua[6]
@@ -86,7 +86,7 @@ MACRO tt_um_dvxf_dj8v_dac
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 11.965 0.000 12.415 0.500 ;
+        RECT 23.930 0.000 24.830 1.000 ;
     END
   END ua[6]
   PIN ua[7]
@@ -94,7 +94,7 @@ MACRO tt_um_dvxf_dj8v_dac
     USE SIGNAL ;
     PORT
       LAYER met4 ;
-        RECT 0.925 0.000 1.375 0.500 ;
+        RECT 1.850 0.000 2.750 1.000 ;
     END
   END ua[7]
   PIN ui_in[0]
@@ -72089,17 +72089,17 @@ MACRO tt_um_dvxf_dj8v_dac
         RECT 150.245 170.025 150.575 170.355 ;
         RECT 157.430 108.620 159.030 220.410 ;
         RECT 102.995 102.565 104.005 103.575 ;
-        RECT 156.560 3.400 157.160 26.400 ;
-        RECT 78.130 2.800 157.160 3.400 ;
-        RECT 0.925 0.500 1.375 1.365 ;
-        RECT 11.965 0.500 12.415 0.945 ;
-        RECT 23.005 0.500 23.455 0.885 ;
-        RECT 34.045 0.500 34.495 1.145 ;
-        RECT 45.085 0.500 45.535 1.075 ;
-        RECT 56.125 0.500 56.575 1.045 ;
-        RECT 67.165 0.500 67.615 1.075 ;
-        RECT 78.130 0.710 78.730 2.800 ;
-        RECT 78.205 0.500 78.655 0.710 ;
+        RECT 156.560 1.770 157.160 26.400 ;
+        RECT 1.850 1.000 2.750 1.770 ;
+        RECT 23.930 1.000 24.830 1.770 ;
+        RECT 46.010 1.000 46.910 1.770 ;
+        RECT 68.090 1.000 68.990 1.770 ;
+        RECT 90.170 1.000 91.070 1.770 ;
+        RECT 112.250 1.000 113.150 1.770 ;
+        RECT 134.330 1.000 135.230 1.770 ;
+        RECT 156.260 1.000 157.460 1.770 ;
+        RECT 156.260 0.000 156.410 1.000 ;
+        RECT 157.310 0.000 157.460 1.000 ;
   END
 END tt_um_dvxf_dj8v_dac
 END LIBRARY
