@@ -9,7 +9,7 @@ You can also include images in this folder and reference them in the markdown. E
 
 # How it works
 
-DJ8 is a 8-bit CPU, originally developped for XCS10XL featuring:
+DJ8 is a 8-bit CPU featuring:
 * 8 x 8-bit register file
 * 3-4 cycles per instruction
 * 15-bit address bus
@@ -22,7 +22,7 @@ DJ8 is a 8-bit CPU, originally developped for XCS10XL featuring:
 |--|--|--|
 | 0x0000 | 0x7fff | External memory
 | 0x8000 | 0xffff | Internal Test ROM (256 bytes, mirrored)
-| 0xff00 | 0xff00 | DAC_OUT (8-bit unsigned)
+| 0xff00 | 0xff00 | DAC_OUT (8-bit unsigned, write-only)
 
 #### External memory map if using the recommended setup (see [pinout](#pinout))
 
@@ -74,11 +74,11 @@ No external hardware needed. This demo shows a rotating indicator on the 7-segme
 
 Modem handshakes sound like music to your hears? It's your lucky day! Become a bit-crunching DJ thanks to 256 lo-fi glitchy settings.
 
-Connect ua[0] -> TIA (opamp + resistor) -> speaker. Play with the DIP switches to change the loop settings. Suggested frequency/amp/passives TBD. 
+Connect ua[0] -> amp(TBD?) -> speaker. Play with the DIP switches to change the loop settings. Suggested frequency/amp/passives TBD. 
 
 # External hardware
 
-* No external hardware needed for Demo 1
-* Speaker + Opamp + Resistor for Demo 2
+* No external hardware for Demo 1
+* Speaker (+ amp?) for Demo 2
 * Otherwise: Parallel Flash ROM + optional SRAM
 
