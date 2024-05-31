@@ -74,7 +74,7 @@ No external hardware needed. This demo shows a rotating indicator on the 7-segme
 
 Modem handshakes sound like music to your hears? It's your lucky day! Become a bit-crunching DJ thanks to 256 lo-fi glitchy settings.
 
-Connect a speaker to ua[0]. Play with the DIP switches to change the loop settings. Suggested frequency and amp/passives TBD. 
+Connect a speaker to ua[0]. Play with the DIP switches to change the loop settings. Suggested frequency/amp/passives TBD. 
 
 # External hardware
 
