@@ -2,7 +2,7 @@
 
 // just a stub to keep the Tiny Tapeout tools happy
 
-module tt_um_mattvenn_r2r_dac (
+module tt_um_dvxf_dj8v_dac (
     input  wire       VGND,
     input  wire       VPWR,
     input  wire [7:0] ui_in,    // Dedicated inputs
@@ -15,59 +15,41 @@ module tt_um_mattvenn_r2r_dac (
     input  wire       clk,      // clock
     input  wire       rst_n     // reset_n - low to reset
 );
-    wire [7:0] r2r_out;
+    wire [7:0] dac_out;
+    assign uio_oe[0] = VPWR;
+    assign uio_oe[1] = VPWR;
+    assign uio_oe[2] = VPWR;
+    assign uio_oe[3] = VPWR;
+    assign uio_oe[4] = VPWR;
+    assign uio_oe[5] = VPWR;
+    assign uio_oe[6] = VPWR;
+    assign uio_oe[7] = VPWR;
 
-    r2r_dac_control r2r_dac_control(
-        .clk(clk),                  // expect a 10M clock
-        .n_rst(rst_n),
-        .ext_data(uio_in[0]),       // if this is high, then DAC data comes from ui_in[7:0]
-        .load_divider(uio_in[1]),   // load value set on data to the clock divider
-        .data(ui_in),               // connect to ui_in[7:0]
-        .r2r_out(r2r_out),          // 8 bit out to the R2R DAC
+    tt_um_dvxf_dj8v tt_um_dvxf_dj8v (
+        .VGND(VGND),
         .VPWR(VPWR),
-        .VGND(VGND)
+        .clk(clk),
+        .ena(ena),
+        .rst_n(rst_n),
+        .ui_in(ui_in),
+        .uio_in(uio_in),
+        .uio_oe(dac_out),
+        .uio_out(uio_out),
+        .uo_out(uo_out)
         );
 
     r2r r2r(
-        .b0(r2r_out[0]),
-        .b1(r2r_out[1]),
-        .b2(r2r_out[2]),
-        .b3(r2r_out[3]),
-        .b4(r2r_out[4]),
-        .b5(r2r_out[5]),
-        .b6(r2r_out[6]),
-        .b7(r2r_out[7]),
+        .b0(dac_out[0]),
+        .b1(dac_out[1]),
+        .b2(dac_out[2]),
+        .b3(dac_out[3]),
+        .b4(dac_out[4]),
+        .b5(dac_out[5]),
+        .b6(dac_out[6]),
+        .b7(dac_out[7]),
         .out(ua[0]),
         .VSUBS(VGND),
         .GND(VGND)
         );
-
-    // ties for the output enables
-    assign uo_out[0] = VGND;
-    assign uo_out[1] = VGND;
-    assign uo_out[2] = VGND;
-    assign uo_out[3] = VGND;
-    assign uo_out[4] = VGND;
-    assign uo_out[5] = VGND;
-    assign uo_out[6] = VGND;
-    assign uo_out[7] = VGND;
-
-    assign uio_out[0] = VGND;
-    assign uio_out[1] = VGND;
-    assign uio_out[2] = VGND;
-    assign uio_out[3] = VGND;
-    assign uio_out[4] = VGND;
-    assign uio_out[5] = VGND;
-    assign uio_out[6] = VGND;
-    assign uio_out[7] = VGND;
-
-    assign uio_oe[0] = VGND;
-    assign uio_oe[1] = VGND;
-    assign uio_oe[2] = VGND;
-    assign uio_oe[3] = VGND;
-    assign uio_oe[4] = VGND;
-    assign uio_oe[5] = VGND;
-    assign uio_oe[6] = VGND;
-    assign uio_oe[7] = VGND;
 
 endmodule
