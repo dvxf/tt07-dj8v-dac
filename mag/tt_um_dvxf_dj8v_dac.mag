@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1717162131
+timestamp 1717168251
 << metal1 >>
 rect 704 21700 904 22564
 rect 704 21640 796 21700
@@ -588,14 +588,17 @@ rect 20599 20513 20801 20514
 rect 31312 5279 31432 5280
 rect 31312 5161 31313 5279
 rect 31431 5161 31432 5279
-rect 400 0 520 200
-rect 4816 0 4936 200
-rect 9232 0 9352 200
-rect 13648 0 13768 200
-rect 18064 0 18184 200
-rect 22480 0 22600 200
-rect 26896 0 27016 200
-rect 31312 0 31432 5161
+rect 31312 680 31432 5161
+rect 15626 560 31432 680
+rect 185 0 275 273
+rect 2393 0 2483 189
+rect 4601 0 4691 177
+rect 6809 0 6899 229
+rect 9017 0 9107 215
+rect 11225 0 11315 209
+rect 13433 0 13523 215
+rect 15626 142 15746 560
+rect 15641 0 15731 142
 use r2r  r2r_0
 timestamp 1710085389
 transform 1 0 23174 0 1 -448
@@ -605,21 +608,21 @@ timestamp 1717153468
 transform 1 0 -2 0 1 22274
 box 492 496 31808 22304
 << labels >>
-flabel metal4 s 31312 0 31432 200 0 FreeSans 960 0 0 0 ua[0]
+flabel metal4 s 15641 0 15731 100 0 FreeSans 480 0 0 0 ua[0]
 port 3 nsew signal bidirectional
-flabel metal4 s 26896 0 27016 200 0 FreeSans 960 0 0 0 ua[1]
+flabel metal4 s 13433 0 13523 100 0 FreeSans 480 0 0 0 ua[1]
 port 4 nsew signal bidirectional
-flabel metal4 s 22480 0 22600 200 0 FreeSans 960 0 0 0 ua[2]
+flabel metal4 s 11225 0 11315 100 0 FreeSans 480 0 0 0 ua[2]
 port 5 nsew signal bidirectional
-flabel metal4 s 18064 0 18184 200 0 FreeSans 960 0 0 0 ua[3]
+flabel metal4 s 9017 0 9107 100 0 FreeSans 480 0 0 0 ua[3]
 port 6 nsew signal bidirectional
-flabel metal4 s 13648 0 13768 200 0 FreeSans 960 0 0 0 ua[4]
+flabel metal4 s 6809 0 6899 100 0 FreeSans 480 0 0 0 ua[4]
 port 7 nsew signal bidirectional
-flabel metal4 s 9232 0 9352 200 0 FreeSans 960 0 0 0 ua[5]
+flabel metal4 s 4601 0 4691 100 0 FreeSans 480 0 0 0 ua[5]
 port 8 nsew signal bidirectional
-flabel metal4 s 4816 0 4936 200 0 FreeSans 960 0 0 0 ua[6]
+flabel metal4 s 2393 0 2483 100 0 FreeSans 480 0 0 0 ua[6]
 port 9 nsew signal bidirectional
-flabel metal4 s 400 0 520 200 0 FreeSans 960 0 0 0 ua[7]
+flabel metal4 s 185 0 275 100 0 FreeSans 480 0 0 0 ua[7]
 port 10 nsew signal bidirectional
 flabel metal4 s 12574 44952 12634 45152 0 FreeSans 480 90 0 0 uo_out[7]
 port 50 nsew signal output
